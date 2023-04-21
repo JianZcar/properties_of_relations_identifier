@@ -26,7 +26,9 @@ def str_int(input_str: str, input_list: list):
 
 def num_to_data_list(input_set: str, number_list: list = None,
                      par_num: ParenthesisNumber = ParenthesisNumber(0, 0)) -> list:
+
     """Takes in a string of numbers and symbols and returns a list of numbers properly formatted."""
+
     if number_list is None:
         number_list = []
 
@@ -67,7 +69,7 @@ def num_to_data_list(input_set: str, number_list: list = None,
 
 
 if __name__ == '__main__':
-    print(num_to_data_list("(1, (2, 3, (4, 5, 6), 7), 8, (9, 10, 11), 12)"))
+    # print(num_to_data_list("(1, (2, 3, (4, 5, 6), 7), 8, (9, 10, 11), 12)"))
     number = input_number()
     print(number)
     print(num_to_data_list(number))
